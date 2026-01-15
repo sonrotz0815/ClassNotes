@@ -5,7 +5,7 @@ const API_URL = "https://classnotes1414.azurewebsites.net";
 export async function getNotes() {
   const res = await fetch(`${API_URL}/notes`);
   const notes = await res.json();
-  console.log("Fetched notes:", notes);
+  console.log("Fetched noted:", notes);
   return notes;
 }
 
